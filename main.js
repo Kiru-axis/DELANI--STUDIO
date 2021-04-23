@@ -7,6 +7,7 @@ $(document).ready(function () {
   $("#development").hide();
   $("#product").hide();
   $(".stack-text").hide();
+
   //user interface
   //1. Design
   $("div.img-text-1").click(function () {
@@ -26,7 +27,6 @@ $(document).ready(function () {
     $("div.img-text-2").toggle();
     $("#development").hide();
   });
-
   //3. Product
   $("div.img-text-3").click(function () {
     $("div.img-text-3").toggle();
@@ -42,22 +42,23 @@ $(document).ready(function () {
   $("div.img-text-1").click(function () {
     $("#design").show();
     $("div.img-text-1").hide();
+    $("#design").css("text-align", "center");
     $("#design h6").css("text-align", "center");
     $("#design h6").css("font-weight", "bolder");
   });
-
   //development
   $("div.img-text-2").click(function () {
     $("#development").show();
     $("div.img-text-2").hide();
+    $("#development").css("text-align", "center");
     $("#development h6").css("text-align", "center");
     $("#development h6").css("font-weight", "bolder");
   });
-
   //product
   $("div.img-text-3").click(function () {
     $("#product").show();
     $("div.img-text-3").hide();
+    $("#product").css("text-align", "center");
     $("#product h6").css("text-align", "center");
     $("#product h6").css("font-weight", "bolder");
   });
@@ -65,8 +66,9 @@ $(document).ready(function () {
   //-portfolio section
   $(".image-description").hover(function () {
     $(".image-description").addClass("hoverImg");
-    $(".stack-text").toggle();
+    $(".stack-text").show();
   });
+
   // form section
 
   $("form.user-input").submit(function (event) {
@@ -78,9 +80,14 @@ $(document).ready(function () {
     $("#hisEmail").html(userEmail);
     $("#hisMessage").html(userMessage);
     $(".alert").show();
-    alert(
-      `Hello ${userName} . we have recieved your message, and we thank you for reaching out to us.`
-    );
+    // alert(
+    //   `Hello ${userName} . we have recieved your message, and we thank you for reaching out to us.`
+    // );
     event.preventDefault();
   });
 });
+// function success(){
+//   let userName = document.getElementById("name").value;
+//   let userEmail = document.getElementById("email").value;
+//   let userMessage = document.getElementById("user-msg").value;
+// };

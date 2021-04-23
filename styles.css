@@ -36,9 +36,6 @@ section.para {
   text-align: center;
   color: white;
 }
-.stack-text {
-  font-size: 2vw;
-}
 
 .project-title {
   color: white;
@@ -50,6 +47,8 @@ section.para {
   flex-shrink: 1;
   border: 1px solid none;
   box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 2vw;
 }
 .footer-section {
   background-image: url("./assets/backgrounds/c_image.jpg");
