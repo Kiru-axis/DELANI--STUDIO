@@ -47,7 +47,8 @@ section.para {
   flex-shrink: 1;
   border: 1px solid none;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .3);
   font-size: 2vw;
 }
 .stack-text-1{
